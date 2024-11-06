@@ -5,7 +5,7 @@ export const WF_ROOT = "http://content.warframe.com/dynamic/worldState.php";
 // WarframeStat (https://api.warframestat.us/pc/?language=ru)
 export const STAT_ROOT = "https://api.warframestat.us/pc";
 export const RUS = "/?language=ru";
-export const RU = "/ru";
+export const RU = "/ru/";
 
 
 export const API_RU = STAT_ROOT+RU;
