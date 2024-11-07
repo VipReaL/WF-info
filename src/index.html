@@ -4,105 +4,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./images/favicon/favicon.ico" sizes="any">
-  <link rel="icon" href="./images/favicon/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./images/favicon/apple-touch-icon.png">
   <title>Warframe</title>
+  <link rel="icon" href="<%=require('./images/favicon/icon.svg')%>" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="<%=require('./images/favicon/apple-touch-icon.png')%>">
 </head>
 
 <body>
   <header class="site-header">
+
     <div class="site-logo">
-      <img class="site-logo-img" src="<%=require('./images/logo/Logo-256.png')%>" alt="logo" width="60" height="60">
-      <p class="site-logo-text">Vip.ReaL</p>
+      <img class="site-logo__img" src="<%=require('./images/logo/logo.png')%>" alt="logo" width="452" height="63">
     </div>
+
     <nav class="site-navigation">
-      <ul>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.warframe.com/ru">Официальный сайт игры</a>
+      <ul class="site-navigation__list">
+        <li class="site-navigation__item">
+          <a href="#">Новости</a>
         </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://warframe.fandom.com/ru/wiki/Заглавная_страница">Вики</a>
+        <li class="site-navigation__item">
+          <a href="#">Интерактивные карты</a>
+          <ul hidden>
+            <li>
+              <a href="https://warframe.fandom.com/wiki/Map:Orb_Vallis?">Долина Сфер</a>
+            </li>
+            <li>
+              <a href="https://warframe.fandom.com/wiki/Map:Plains_of_Eidolon?">Равнины Эйдолона</a>
+            </li>
+            <li>
+              <a href="https://warframe.fandom.com/wiki/Map:Cambion_Drift?">Камбионский Дрейф</a>
+            </li>
+            <li>
+              <a href="https://warframe.fandom.com/ru/wiki/Карта:Дувири:_метки_интереса?">Дувири</a>
+            </li>
+          </ul>
         </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://warframe.fandom.com/wiki/WARFRAME_Wiki">Wiki</a>
+      </ul>
+
+      <ul class="theme-menu__list">
+        <li class="theme-menu__item">
+          <button type="button" data-theme="dark" class="button theme-menu__button">
+            Темная
+          </button>
         </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://warframe.fandom.com/ru/wiki/Цель_Синтеза#Ежедневная_миссия">Цель Синтеза</a>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="auto" disabled class="button theme-menu__button">
+            Системная
+          </button>
         </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://warframe.fandom.com/ru/wiki/Сравнение_Оружия#Основное_оружие_">Сравнение оружия</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://steamcommunity.com/sharedfiles/filedetails/?id=2821251725">Справочник по синдикатам</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://warframe.fandom.com/wiki/Special:AllMaps">Interactive Maps</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://warframe.market/ru/">Warframe Market</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://riven.market/">Riven Market</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/cms/hnfvc0o3jnfvc873njb03enrf56.html">DropTables</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://gamesqa.ru/games/reaktivniye-kristaly-i-pilony-warframe-19732/">Руководство по реактивным
-            кристаллам и пилонам Реквиема</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://dojoplanner.stom66.co.uk/#">Dojo Planner</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://overframe.gg/">Overframe</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://wfinfo.warframestat.us/">WFInfo</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://alecaframe.com/">AlecaFrame</a>
-        </li>
-        <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://warframe.market/ru/tools/ducats">Дуканатор</a>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="light" class="button theme-menu__button">
+            Светлая
+          </button>
         </li>
       </ul>
     </nav>
 
-    <ul class="theme-menu__list">
-      <li class="theme-menu__item">
-        <button type="button" data-theme="dark" class="button theme-menu__button">
-          Темная
-        </button>
-      </li>
-      <li class="theme-menu__item">
-        <button type="button" data-theme="auto" disabled class="button theme-menu__button">
-          Системная
-        </button>
-      </li>
-      <li class="theme-menu__item">
-        <button type="button" data-theme="light" class="button theme-menu__button">
-          Светлая
-        </button>
-      </li>
-    </ul>
-
   </header>
 
   <main>
+    <button class="getButton" type="button">Загрузка данных с WarframeStat.us</button>
 
   </main>
 
   <footer>
-
+    <ul>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.warframe.com/ru">Официальный сайт игры</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://warframe.fandom.com/ru/wiki/Заглавная_страница">Вики</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://warframe.fandom.com/wiki/WARFRAME_Wiki">Wiki</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://warframe.fandom.com/ru/wiki/Цель_Синтеза#Ежедневная_миссия">Цель Синтеза</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://warframe.fandom.com/ru/wiki/Сравнение_Оружия#Основное_оружие_">Сравнение оружия</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://steamcommunity.com/sharedfiles/filedetails/?id=2821251725">Справочник по синдикатам</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://warframe.fandom.com/wiki/Special:AllMaps">Interactive
+          Maps</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://warframe.market/ru/">Warframe Market</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://riven.market/">Riven Market</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://warframe-web-assets.nyc3.cdn.digitaloceanspaces.com/uploads/cms/hnfvc0o3jnfvc873njb03enrf56.html">DropTables</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer"
+          href="https://gamesqa.ru/games/reaktivniye-kristaly-i-pilony-warframe-19732/">Руководство по реактивным
+          кристаллам и пилонам Реквиема</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://dojoplanner.stom66.co.uk/#">Dojo Planner</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://overframe.gg/">Overframe</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://wfinfo.warframestat.us/">WFInfo</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://alecaframe.com/">AlecaFrame</a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://warframe.market/ru/tools/ducats">Дуканатор</a>
+      </li>
+    </ul>
   </footer>
 
 </body>

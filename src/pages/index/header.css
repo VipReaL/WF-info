@@ -2,4 +2,48 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--background-color);
+  min-height: 60px;
+}
+
+.site-logo {
+  padding-inline: 40px;
+}
+
+.site-logo__img {
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.site-navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.site-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px;
+}
+
+.site-navigation__item {
+
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 15px;
+  padding-inline-end: 40px;
+}
+
+.theme-menu__item {
+
 }

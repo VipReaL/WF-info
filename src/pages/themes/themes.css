@@ -15,6 +15,11 @@
   --color-icon-like: #548EAA;
   --color-icon-before: #7AA600;
 
+  --font-family-body: Roboto, Arial, Helvetica, sans-serif;
+  --font-family-title: Roboto, Arial, Helvetica, sans-serif;
+  --font-family-subtitle: Roboto, Arial, Helvetica, sans-serif;
+  --font-family-botton: Roboto, Arial, Helvetica, sans-serif;
+
   /* --like-color: #f00; */
   /* --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem); */
   /* --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); */
@@ -44,6 +49,11 @@
   --color-icon-like: #4cb7eb;
   --color-icon-before: #84b300;
 
+  --font-family-body: Roboto, Arial, Helvetica, sans-serif;
+  --font-family-title: Roboto, Arial, Helvetica, sans-serif;
+  --font-family-subtitle: Roboto, Arial, Helvetica, sans-serif;
+  --font-family-botton: Roboto, Arial, Helvetica, sans-serif;
+
   /* --like-color: #f00; */
   /* --heading-font-weight: 785; */
   /* --text-font-weight: 465; */
@@ -72,6 +82,11 @@
     --color-icon: #6c8694;
     --color-icon-like: #4cb7eb;
     --color-icon-before: #84b300;
+
+    --font-family-body: Roboto, Arial, Helvetica, sans-serif;
+    --font-family-title: Roboto, Arial, Helvetica, sans-serif;
+    --font-family-subtitle: Roboto, Arial, Helvetica, sans-serif;
+    --font-family-botton: Roboto, Arial, Helvetica, sans-serif;
   
     /* --like-color: #f00; */
     /* --heading-font-weight: 785; */
@@ -134,3 +149,4 @@
     --sorbus-rgb: 247, 125, 5;
     --scarlet: #DB0000;
 */
+
