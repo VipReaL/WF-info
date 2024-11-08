@@ -18,10 +18,14 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
+  color: inherit;
+  transition: color .4s;
 }
 
 a:hover {
   text-decoration: none;
+  color: var(--text-color-accent);
+  transition: color .4s;
 }
 
 /* Common */
@@ -108,4 +112,13 @@ label {
 
 legend {
   display: block;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  background: var(--body-color);
+  color: var(--text-color);
 }
