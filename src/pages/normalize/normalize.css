@@ -19,13 +19,12 @@ a:link,
 a:visited {
   text-decoration: none;
   color: inherit;
-  transition: color .4s;
+  transition: color var(--color-transition);
 }
 
 a:hover {
   text-decoration: none;
   color: var(--text-color-accent);
-  transition: color .4s;
 }
 
 /* Common */
@@ -79,6 +78,7 @@ select {
   font-size: inherit;
   color: inherit;
   background-color: transparent;
+  transition: color var(--color-transition);
 }
 
 input::-ms-clear {
@@ -104,6 +104,10 @@ button:active {
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+button:hover {
+  color: var(--text-color-accent);
 }
 
 label {

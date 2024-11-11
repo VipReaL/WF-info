@@ -18,11 +18,13 @@
   width: 200px;
   object-fit: cover;
   object-position: center;
+  padding: 5px;
 }
 
 .site-navigation {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  padding-inline: 40px;
 }
 
 .site-navigation__list {
@@ -31,63 +33,69 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding: 15px;
 }
 
 .site-navigation__item {
-  position: relative;
-}
-
-.site-navigation__item a {
-  color: var(--text-color-title);
+  display: flex;
+  align-items: center;
+  min-height: 60px;
   text-transform: uppercase;
-  transition: color .4s;
-}
-
-.site-navigation__item a:hover {
-  color: var(--text-color-accent);
+  color: var(--text-color-title);
+  transition: color var(--color-transition);
 }
 
 /* drop-down-menu START */
 
-.site-navigation__list-option {
-  display: none;
-  position: absolute;
-  left: -20px;
-  top: 50px;
-  background-color: var(--background-color);
-  padding: 20px;
-  border-radius: 5%;
+.menu__dropdown {
+  position: relative;
 }
 
-.site-navigation__item:hover .site-navigation__list-option {
-  display: flex;
+.menu__dropdown-btn {
+  color: inherit;
+  transition: color var(--color-transition);
+}
+
+.menu__dropdown-btn:hover {
+  color: var(--text-color-accent);
+}
+
+.menu__dropdown-list {
+  display: none;
   flex-direction: column;
   gap: 10px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  padding: 28px 20px 20px 20px;
 }
 
-.site-navigation__list-option a {
+.menu__dropdown:hover .menu__dropdown-list {
+  display: flex;
+}
+
+.menu__dropdown-list::before {
+  position: absolute;
+  content: '';
+  top: 8px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow-dropdown);
+  border-radius: 5%;
+  z-index: -1;
+}
+
+.menu__dropdown-list a,
+.menu__dropdown-list button {
   text-transform: capitalize;
   white-space: nowrap;
 }
 
-.site-navigation__list-option li:first-of-type a {
-  padding: 54px 60px 0 0;
-}
-
 /* drop-down-menu END */
 
-.theme-menu__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 15px;
-  padding-inline-end: 40px;
-}
+.theme-menu__list {}
 
-.theme-menu__button {
-  color: var(--text-color-title);
-  text-transform: uppercase;
-}
+.theme-menu__item {}
+
+.theme-menu__button {}

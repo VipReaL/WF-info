@@ -22,7 +22,7 @@
 
   --text-color: #333;
   --text-color-title: #6F7577;
-  --text-color-accent: #548EAA;
+  --text-color-accent: #4c8aa9;
   --text-color-icon: #929CA5;
 
   --color-button: #548EAA;
@@ -32,6 +32,10 @@
   --color-icon-like: #548EAA;
   --color-icon-before: #7AA600;
 
+  --box-shadow-dropdown: 0 0 4px rgba(0, 0, 0, .4);
+  
+  --color-transition: .3s;
+  
   --font-family-body: 'Sofia Sans Semi Condensed', Arial, sans-serif;
   --font-family-title: 'Sofia Sans Semi Condensed', Arial, sans-serif;
   --font-family-subtitle: 'Sofia Sans Semi Condensed', Arial, sans-serif;
@@ -67,6 +71,10 @@
   --color-icon-like: #4cb7eb;
   --color-icon-before: #84b300;
 
+  --box-shadow-dropdown: 0 0 4px rgba(255, 255, 255, .4);
+
+  --color-transition: .3s;
+
   --font-family-body: 'Sofia Sans Semi Condensed', Arial, sans-serif;
   --font-family-title: 'Sofia Sans Semi Condensed', Arial, sans-serif;
   --font-family-subtitle: 'Sofia Sans Semi Condensed', Arial, sans-serif;
@@ -101,6 +109,10 @@
     --color-icon: #6c8694;
     --color-icon-like: #4cb7eb;
     --color-icon-before: #84b300;
+
+    --box-shadow-dropdown: 0 0 14px rgba(255, 255, 255, .4);
+
+    --color-transition: .3s;
 
     --font-family-body: 'Sofia Sans Semi Condensed', Arial, sans-serif;
     --font-family-title: 'Sofia Sans Semi Condensed', Arial, sans-serif;
