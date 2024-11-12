@@ -44,7 +44,7 @@
   transition: color var(--color-transition);
 }
 
-/* drop-down-menu START */
+/* drop-down-menu START - Первый уровень вложенности */
 
 .menu-dropdown {
   position: relative;
@@ -96,6 +96,15 @@
 
 .menu-dropdown__item:last-of-type {
   padding-block-end: 0;
+}
+
+/* drop-down-menu END */
+
+/* drop-down-menu START - Второй уровень вложенности */
+
+.menu-dropdown__list .menu-dropdown__list {
+  left: 100%;
+  top: 0px;
 }
 
 /* drop-down-menu END */

@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', switchingTheme);
 
 const getButton = document.querySelector('.getButton');
 getButton.addEventListener('click', function () {
-  getWarframeWorldStateData ()
+  getWarframeWorldStateData()
     .then((data) => console.log(data))
-    // сюда подставить функцию и передать ей нужные пораметры из data
+  // сюда подставить функцию и передать ей нужные пораметры из data
 })
 
 // dropDownMenu
@@ -37,7 +37,7 @@ const dropdowns = nav.querySelectorAll('.menu-dropdown[data-has-children] > .men
 submenus.forEach((item) => {
   const dropdown = item.querySelector(':scope > .menu-dropdown__list');
   // console.log(dropdown);
-  
+
   // Скрываем все выподающие меню при загрузке страницы (hidden)
   dropdown.setAttribute('hidden', '');
 
@@ -55,7 +55,7 @@ submenus.forEach((item) => {
 
 });
 
-function toggleDropdown (button, dropdown) {
+function toggleDropdown(button, dropdown) {
   if (button.getAttribute('aria-expanded') === 'true') {
     button.setAttribute('aria-expanded', 'false');
     dropdown.setAttribute('hidden', '');
@@ -72,7 +72,7 @@ function focusIsInside(element) {
 // Закрываем навигацию, если кликнули вне навигации
 function collapseDropdownsWhenClickingOutsideNav(e) {
   const target = e.target
-  
+
   dropdowns.forEach(function (dropdown) {
     if (!dropdown.parentElement.contains(target)) {
       dropdown.setAttribute('hidden', '')
