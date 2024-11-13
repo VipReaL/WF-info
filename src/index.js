@@ -30,7 +30,8 @@ const submenus = nav.querySelectorAll('.menu-dropdown[data-has-children]');
 // console.log(submenus);
 
 // находим выподающий список меню
-const dropdowns = nav.querySelectorAll('.menu-dropdown[data-has-children] > .menu-dropdown__list');
+// const dropdowns = nav.querySelectorAll('.menu-dropdown[data-has-children] > .menu-dropdown__list');
+const dropdowns = nav.querySelectorAll('.menu-dropdown__list');
 // console.log(dropdowns);
 
 
@@ -41,12 +42,28 @@ submenus.forEach((item) => {
   // Скрываем все выподающие меню при загрузке страницы (hidden)
   dropdown.setAttribute('hidden', '');
 
+  // Первый уровень вложенности
   const button = item.querySelector(':scope > .menu-dropdown__btn')
   // console.log(button);
 
   // раскрываем-скрываем меню при клике
   button.addEventListener('click', function () {
     toggleDropdown(button, dropdown);
+  })
+
+  // Второй уровень вложенности
+  const buttonTwo = dropdown.querySelectorAll('.menu-dropdown__item .menu-dropdown__btn');
+  // console.log(buttonTwo);
+  
+  buttonTwo.forEach((itemButton) => {
+    itemButton.addEventListener('click', function () {
+      // console.log(itemButton);
+
+      const dropdownTwo = itemButton.parentElement.querySelector('.menu-dropdown__list')
+      // console.log(dropdownTwo);
+
+      toggleDropdown(itemButton, dropdownTwo);
+    })
   })
 
   // Обрабатываем нажатие на Esc
