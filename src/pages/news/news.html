@@ -13,13 +13,15 @@
   <header class="site-header">
 
     <div class="site-logo">
-      <img class="site-logo__img" src="<%=require('./images/logo/logo.png')%>" alt="logo" width="452" height="63">
+      <a href="../../index.html">
+        <img class="site-logo__img" src="<%=require('./images/logo/logo.png')%>" alt="logo" width="452" height="63">
+      </a>
     </div>
 
     <nav class="site-navigation">
       <ul class="site-navigation__list">
         <li class="site-navigation__item">
-          <a href="news.html">Новости</a>
+          <a href="./news.html">Новости</a>
         </li>
         <li class="site-navigation__item menu-dropdown" data-has-children>
           <button
@@ -218,87 +220,8 @@
   </header>
 
   <main class="main">
-    <button class="getButton" type="button">Загрузка данных с WarframeStat.us</button>
-    
-    <section class="news">
-      <h1 class="news__title">Новости</h1>
-      <div class="news__container">
-        <article class="news__box" id="670fd7ce6b20a4720b029399">
-          <a class="news__link" target="_blank" rel="noopener noreferrer" href="https://www.warframe.com/get-ready?utm_medium=in-game&utm_source=in-game&utm_campaign=2024-10-1999PlayableDemo">
-            <h2 class="news__heading">Демоверсия «Warframe: 1999» уже доступна для игры!</h2>
-            <img class="news__image" src="https://www-static.warframe.com/uploads/eab20ff6448a9118d7e5fc8ce8e94a09.jpg" alt="Демоверсия «Warframe: 1999» уже доступна для игры!" width="200" height="100">
-            <p class="news__published">
-              Новость опубликована
-              <time datetime="2024-10-16T15:00:00.000Z">2024-10-16T15:00:00.000Z</time>
-            </p>
-            <p class="news__duration">
-              Продолжительность события
-              <time datetime="32d 17h 52m 10s ago">32d 17h 52m 10s ago</time>
-            </p>
-          </a>
-        </article>
-        <article class="news__box" id="671a8e44c500cd1add037714">
-          <a class="news__link" href="https://www.warframe.com/prime-resurgence?utm_medium=in-game&utm_source=in-game&utm_campaign=2024-10-GarudaKhoraPrimeResurgenceLaunch">
-            <h2 class="news__heading">Гаруда Прайм и Кора Прайм уже доступны!</h2>
-            <img class="news__image" src="https://www-static.warframe.com/uploads/f3710d630c73e44119e18b402faea66a.jpg" alt="Гаруда Прайм и Кора Прайм уже доступны!" width="200" height="100">
-            <p class="news__published">
-              Новость опубликована
-              <time datetime="2024-10-24T17:21:00.000Z">2024-10-24T17:21:00.000Z</time>
-            </p>
-            <p class="news__duration">
-              Продолжительность события
-              <time datetime="24d 15h 31m 10s ago">24d 15h 31m 10s ago</time>
-            </p>
-          </a>
-        </article>
-        <article class="news__box" id="671bf80f17d2da0f900762bb">
-          <a class="news__link" href="https://www.warframe.com/1999?utm_medium=in-game&utm_source=in-game&utm_campaign=2024-Warframe1999MonthAnnounce">
-            <h2 class="news__heading">Warframe: 1999 выйдет уже в декабре</h2>
-            <img class="news__image" src="https://www-static.warframe.com/uploads/thumbnails/99543878051369ae7659469efc564c86_1600x900.png" alt="Warframe: 1999 выйдет уже в декабре" width="200" height="100">
-            <p class="news__published">
-              Новость опубликована
-              <time datetime="2024-10-25T19:55:00.000Z">2024-10-25T19:55:00.000Z</time>
-            </p>
-            <p class="news__duration">
-              Продолжительность события
-              <time datetime="23d 12h 57m 10s ago">23d 12h 57m 10s ago</time>
-            </p>
-          </a>
-        </article>
-        <article class="news__box" id="671c019e7fa424f089048758">
-          <a class="news__link" href="https://www.warframe.com/news/devstream-182-highlights?utm_medium=in-game&utm_source=in-game&utm_campaign=2024-Devstream182Highlights">
-            <h2 class="news__heading">Посмотрите: Основные моменты Devstream 182</h2>
-            <img class="news__image" src="https://www-static.warframe.com/uploads/thumbnails/99543878051369ae7659469efc564c86_1600x900.png" alt="Посмотрите: Основные моменты Devstream 182" width="200" height="100">
-            <p class="news__published">
-              Новость опубликована
-              <time datetime="2024-10-25T20:34:00.000Z">2024-10-25T20:34:00.000Z</time>
-            </p>
-            <p class="news__duration">
-              Продолжительность события
-              <time datetime="23d 12h 18m 10s ago">23d 12h 18m 10s ago</time>
-            </p>
-          </a>
-        </article>
-        <article class="news__box" id="67251dce32c0f11dfd00746b">
-          <a class="news__link" href="https://www.warframe.com/news/movember-2024?utm_medium=in-game&utm_source=in-game&utm_campaign=2024-11-Movember2024">
-            <h2 class="news__heading">Усабрь 2024</h2>
-            <img class="news__image" src="https://www-static.warframe.com/uploads/ad57194e3f0320f71980c25845ba1f0e.png" alt="Усабрь 2024" width="200" height="100">
-            <p class="news__published">
-              Новость опубликована
-              <time datetime="2024-11-01T18:00:00.000Z">2024-11-01T18:00:00.000Z</time>
-            </p>
-            <p class="news__completion">
-              Дата завершения
-              <time datetime="2024-12-01T03:59:00.000Z">2024-12-01T03:59:00.000Z</time>
-            </p>
-            <p class="news__duration">
-              Продолжительность события
-              <time datetime="in 12d 19h 6m 49s">in 12d 19h 6m 49s</time>
-            </p>
-          </a>
-        </article>
-      </div>
-    </section>
+    <button class="getButton" type="button">Загрузка данных с WarframeStat.us !!!</button>
+    <h1>Новости</h1>
   </main>
 
   <footer class="footer">

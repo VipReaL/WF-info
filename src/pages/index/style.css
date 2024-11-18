@@ -1,3 +1,42 @@
 .main {
   margin-block-start: 60px;
 }
+
+/* news start */
+
+.news {
+  text-align: center;
+}
+
+.news__title {
+
+}
+
+.news__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+
+  /* padding: 20px; FIXME: */
+}
+.news__box {
+  min-width: 200px;
+}
+.news__link {
+  display: flex;
+  flex-direction: column;
+}
+.news__heading {
+}
+.news__image {
+  order: -1;
+}
+.news__published {
+}
+.news__completion{
+}
+.news__duration {
+}
+
+/* news end */

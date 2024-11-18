@@ -39,6 +39,10 @@
   display: flex;
   align-items: center;
   min-height: 60px;
+}
+
+.site-navigation__item,
+.site-navigation__item button {
   text-transform: uppercase;
   color: var(--text-color-title);
   transition: color var(--color-transition);
