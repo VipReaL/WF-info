@@ -23,6 +23,7 @@
   --text-color: #333;
   --text-color-title: #6F7577;
   --text-color-accent: #4c8aa9;
+  --text-color-card: #dddddd;
   --text-color-icon: #929CA5;
 
   --color-button: #548EAA;
@@ -62,6 +63,7 @@
   --text-color: #dddddd;
   --text-color-title: #aaa;
   --text-color-accent: #4cb7eb;
+  --text-color-card: #dddddd;
   --text-color-icon: #666;
 
   --color-button: #4cb7eb;
@@ -99,6 +101,7 @@
     --text-color: #dddddd;
     --text-color-title: #aaa;
     --text-color-accent: #4cb7eb;
+    --text-color-card: #dddddd;
     --text-color-icon: #666;
   
     /* --text-color-shadow: #080808; */
